@@ -1,0 +1,100 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+#colorPalette {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.colorBox {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorBox img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.colorHex {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#downloadPaletteButton {
+    right: 30px;
+    bottom: 30px;
+}
+
+#downloadPaletteButton {
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  position: fixed;
+}
+
+#downloadPaletteButton:hover,
+#downloadImageButton:hover {
+  background-color: darkblue;
+}
+
+#generatedImageUrl {
+  text-align: center;
+  margin-top: 20px;
+}
